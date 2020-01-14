@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
+ <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery.js"></script>
   <script src="js/index.js"></script>
   <title>Document</title>
@@ -15,96 +14,161 @@
 
 <body>
   <div class="container">
+    <br>
     <div class="jumbotron">
       <h1>Programming Flashcards</h1>
+      <h2>Click on a card to learn more!</h2>
     </div>
     <div class="row">
       <div class="col-md-4">
-        <div class="panel panel-info">
-          <div class="panel-header" id="operators-head">Operators</div>
+        <div class="panel panel-primary">
+          <div class="panel-heading" id="operators-head">Operators<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
           <div class="panel-body hidden" id="operators">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nemo id recusandae quis. Aspernatur,
-              obcaecati odio! Sapiente est accusamus unde.</p>
+            <p>JavaScript operators are used to assign values, compare values, perform arithmetic operations, and more.
+            </p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="panel panel-info">
-          <div class="panel-header" id="variables-head">Variables</div>
+        <div class="panel panel-primary">
+          <div class="panel-heading" id="variables-head">Variables<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
           <div class="hidden panel-body" id="variables">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi in illum suscipit aspernatur quidem
-              exercitationem laborum fugiat velit quae eveniet!</p>
+            <p>JavaScript variables are containers for storing data values.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="panel panel-info">
-          <div class="panel-header" id="javascript-head">JavaScript</div>
+        <div class="panel panel-primary">
+          <div class="panel-heading" id="javascript-head">JavaScript<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
           <div class="hidden panel-body" id="javascript">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio facilis sunt nihil inventore
-              incidunt deleniti minima, consequatur asperiores ut est.</p>
+            <p>JavaScript is the programming language of HTML and the Web.</p>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4">
-        <div class="panel panel-info">
-          <div class="panel-header">Operators</div>
-          <div class="panel-body hidden">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nemo id recusandae quis. Aspernatur,
-              obcaecati odio! Sapiente est accusamus unde.</p>
+        <div class="panel panel-primary">
+          <div id="vnc-head" class="panel-heading">Variable naming conventions<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="vnc" class="panel-body hidden">
+            <p>Coding conventions are style guidelines for programming. They typically cover:</p>
+            <ul>
+              <li>Naming and declaration rules for variables and functions.</li>
+              <li>Rules for the use of white space, indentation, and comments.</li>
+              <li>Programming practices and principles</li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="panel panel-info">
-          <div class="panel-header">Variables</div>
-          <div class="hidden panel-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi in illum suscipit aspernatur quidem
-              exercitationem laborum fugiat velit quae eveniet!</p>
+        <div class="panel panel-primary">
+          <div id="functions-head" class="panel-heading">Functions<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="functions" class="hidden panel-body">
+            <p>A JavaScript function is a block of code designed to perform a particular task.
+            A JavaScript function is executed when "something" invokes it (calls it).</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="panel panel-info">
-          <div class="panel-header">JavaScript</div>
-          <div class="hidden panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio facilis sunt nihil inventore
-              incidunt deleniti minima, consequatur asperiores ut est.</p>
+        <div class="panel panel-primary">
+          <div id="methods-head" class="panel-heading">Methods<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="methods" class="hidden panel-body">
+            <p>JavaScript methods are actions that can be performed on objects. A JavaScript method is a property containing a function definition.</p>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4">
-        <div class="panel panel-info">
-          <div class="panel-header">Operators</div>
-          <div class="panel-body hidden">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed nemo id recusandae quis. Aspernatur,
-              obcaecati odio! Sapiente est accusamus unde.</p>
+        <div class="panel panel-primary">
+          <div id="arguments-head" class="panel-heading">Arguments<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="arguments" class="panel-body hidden">
+            <p>The arguments object is a special construct available inside all function calls. It represents the list of arguments that were passed in when invoking the function.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="panel panel-info">
-          <div class="panel-header">Variables</div>
-          <div class="hidden panel-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi in illum suscipit aspernatur quidem
-              exercitationem laborum fugiat velit quae eveniet!</p>
+        <div class="panel panel-primary">
+          <div id="parameters-head" class="panel-heading">Parameters<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="parameters-body" class="hidden panel-body">
+            <p>Function parameters are the names listed in the function definition.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="panel panel-info">
-          <div class="panel-header">JavaScript</div>
-          <div class="hidden panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio facilis sunt nihil inventore
-              incidunt deleniti minima, consequatur asperiores ut est.</p>
+        <div class="panel panel-primary">
+          <div id="return-head" class="panel-heading">Return<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="panel-body" class="hidden panel-body">
+            <p>The return statement stops the execution of a function and returns a value from that function.</p>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div id="chaining-head" class="panel-heading">Chaining methods<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="chaining-body" class="panel-body hidden">
+            <p>With jQuery, you can chain together actions/methods.
+              Chaining allows us to run multiple jQuery methods (on the same element) within a single statement.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div id="strings-head" class="panel-heading">Strings<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="strings-body" class="hidden panel-body">
+            <p>A JavaScript string stores a series of characters like "John Doe".
+
+              A string can be any text inside double or single quotes:</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div id="boolean-head" class="panel-heading">Booleans<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="boolean-body" class="hidden panel-body">
+            <p>Very often, in programming, you will need a data type that can only have one of two values, like</p>
+            <ul>
+              <li> YES / NO </li>
+              <li>ON / OFF </li>
+              <li>TRUE / FALSE </li>
+            </ul>
+
+             <p>For this, JavaScript has a Boolean data type. It can only take the values true or false.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div id="undefin-head" class="panel-heading">Undefined<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="undefin-body" class="panel-body hidden">
+            <p>The undefined property indicates that a variable has not been assigned a value, or not declared at all.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div id="nan-head" class="panel-heading">NaN<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="nan-body" class="hidden panel-body">
+            <p>The global NaN property is a value representing Not-A-Number.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div id="escape-head" class="panel-heading">Escape<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></div>
+          <div id="escape-body" class="hidden panel-body">
+            <p>The escape() function encodes a string.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </body>
