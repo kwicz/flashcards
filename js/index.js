@@ -79,4 +79,13 @@ $(document).ready(function(){
     $("#escape-body").toggle();
   });
 
+  $("button").click(function(){
+    var term = document.getElementById("term").value;
+    var meaning = document.getElementById("meaning").value;
+    var panel = '<div class="col-md-4"><div class="panel panel-primary"><div id="chaining-head" class="panel-heading">' + term + '<span class="glyphicon glyphicon-menu-down"aria-hidden="true"></span></div><div id="chaining-body" class="panel-body hidden"><p>' + meaning + '</p></div></div></div>';
+    $("#old-terms").append(panel);
+
+    event.preventDefault();
+  });
+
 });
