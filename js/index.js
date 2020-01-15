@@ -5,6 +5,7 @@ $(document).ready(function(){
   //});
 
   $("#operators-head").click(function(){
+    console.log(this);
     $("#operators").removeClass("hidden");
     $("#operators").toggle();
   });
@@ -79,13 +80,31 @@ $(document).ready(function(){
     $("#escape-body").toggle();
   });
 
+  // // Working on making 1 function for all panels
+  // $("ol").on("click","li",function() {
+  //   $(this).children("a").toggle();
+  // });
+  
+  // $("#old-terms").on("click",".panel-heading",function() {
+  //   //$(this).children("a").toggle();
+  //   $(".panel-body").removeClass("hidden");
+  //   $(".panel-body").toggle();
+  //   console.log(this)
+  // });
+
   $("button").click(function(){
     var term = document.getElementById("term").value;
     var meaning = document.getElementById("meaning").value;
-    var panel = '<div class="col-md-4"><div class="panel panel-primary"><div id="chaining-head" class="panel-heading">' + term + '<span class="glyphicon glyphicon-menu-down"aria-hidden="true"></span></div><div id="chaining-body" class="panel-body hidden"><p>' + meaning + '</p></div></div></div>';
+    var panel = '<div class="col-md-4"><div class="panel panel-primary"><div id="' + term + '-head" class="panel-heading">' + term + '<span class="glyphicon glyphicon-menu-down"aria-hidden="true"></span></div><div id="' + term + '-body" class="panel-body hidden"><p>' + meaning + '</p></div></div></div>';
     $("#old-terms").append(panel);
 
     event.preventDefault();
+
+    // var go = <script 
+
+
   });
+
+
 
 });
